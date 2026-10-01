@@ -1,5 +1,7 @@
 # Jobs EnglishWordBook · 分级英语词典
 
+![Jobs出品，必属精品](https://picsum.photos/1500/400)
+
 [toc]
 
 ---

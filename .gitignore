@@ -1,0 +1,29 @@
+# Python 本地环境与缓存
+.venv/
+.venv-*/
+venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# 构建中间产物与输出目录
+work/
+build/
+dist/
+*.spec
+
+# 平台安装包与本机产物快捷方式
+*.app
+*.dmg
+*.exe
+*.msi
+*.pkg
+*.zip
+*.lnk
+
+# macOS 系统文件
+.DS_Store
+._*
