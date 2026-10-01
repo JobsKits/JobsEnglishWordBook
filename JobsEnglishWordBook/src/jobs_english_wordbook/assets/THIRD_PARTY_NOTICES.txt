@@ -1,0 +1,21 @@
+Jobs EnglishWordBook — data provenance
+
+Vocabulary, translations, examples and phrases:
+https://github.com/kajweb/dict
+Upstream describes data as crawled from Youdao vocabulary books, including New Oriental books.
+No clear redistribution license is supplied by that repository. These data are retained for local personal study; obtain permission or replace the corpus before public distribution.
+Exact source archive URLs, SHA-256 hashes and record counts are in coverage.json.
+Changes by Jobs: Unicode normalization, case-insensitive headword merging, semicolon sense splitting, exact example deduplication, cumulative school-level sets and custom IELTS learning sets. No generated example sentences are inserted.
+
+Frequency ordering:
+wordfreq 3.1.1 by Robyn Speer and contributors
+https://github.com/rspeer/wordfreq
+Code: Apache License 2.0; frequency data: Creative Commons Attribution-ShareAlike 4.0.
+https://creativecommons.org/licenses/by-sa/4.0/
+Frequency-derived IELTS memberships are shared under CC BY-SA 4.0. This does not grant rights to the underlying third-party vocabulary text.
+
+Runtime:
+Python — PSF License — https://docs.python.org/3/license.html
+PySide6 / Qt — https://doc.qt.io/qtforpython-6/licenses.html
+PyInstaller — https://pyinstaller.org/en/stable/license.html
+Speech voices are provided by the user's operating system and are not bundled.

@@ -1,0 +1,157 @@
+{
+  "sources": [
+    {
+      "book": "ChuZhongluan_2",
+      "records": 1420,
+      "sha256": "a0b9077f96e115589cf969b9ee0b1e52d4c94cbf695431bb71ea43b9ce58dd66",
+      "url": "https://github.com/kajweb/dict/blob/master/book/1521164669076_ChuZhongluan_2.zip"
+    },
+    {
+      "book": "GaoZhongluan_2",
+      "records": 3668,
+      "sha256": "4d5b3056eb414dfc47c1bde42adcbeca166338cd0eb141ceaf54071da188e24e",
+      "url": "https://github.com/kajweb/dict/blob/master/book/1521164673602_GaoZhongluan_2.zip"
+    },
+    {
+      "book": "CET4_2",
+      "records": 3739,
+      "sha256": "ca6661bcaac6330f64054283974b199b378950b755f57c7573e4a06541b07b82",
+      "url": "https://github.com/kajweb/dict/blob/master/book/1521164635506_CET4_2.zip"
+    },
+    {
+      "book": "CET4_3",
+      "records": 2607,
+      "sha256": "2732588a69be6f97e831f47baf08fb8f91f699df01607b7cfcf346c8ad2d5f3c",
+      "url": "https://github.com/kajweb/dict/blob/master/book/1521164643060_CET4_3.zip"
+    },
+    {
+      "book": "CET6_2",
+      "records": 2078,
+      "sha256": "fe12c5a331510e86da4a187a829d9d72e2785588e60ce45d830f349c30fc3866",
+      "url": "https://github.com/kajweb/dict/blob/master/book/1524052554766_CET6_2.zip"
+    },
+    {
+      "book": "CET6_3",
+      "records": 2345,
+      "sha256": "053bbcfecc82ca3cea7d4bcafdb0fea56c019b8e61d544fab462cd2bf72d983f",
+      "url": "https://github.com/kajweb/dict/blob/master/book/1521164633851_CET6_3.zip"
+    },
+    {
+      "book": "Level8_2",
+      "records": 12197,
+      "sha256": "b707f291eb304dd78f17d6e30bbacd41f65a069b43d121f6dc435d0c1c9461a7",
+      "url": "https://github.com/kajweb/dict/blob/master/book/1521164663794_Level8_2.zip"
+    },
+    {
+      "book": "IELTS_2",
+      "records": 3427,
+      "sha256": "b5cba1f4156fb06fae86f427a56532e195d325ebc3188382d986c9244770bf6c",
+      "url": "https://github.com/kajweb/dict/blob/master/book/1521164657744_IELTS_2.zip"
+    },
+    {
+      "book": "IELTS_3",
+      "records": 3575,
+      "sha256": "39e1fcc46818ae8a5b2a7e79af88aed30e5330da2afaf1c3316258abade2dd13",
+      "url": "https://github.com/kajweb/dict/blob/master/book/1521164666922_IELTS_3.zip"
+    },
+    {
+      "book": "wordfreq 3.1.1",
+      "purpose": "仅用于雅思学习档词频排序",
+      "url": "https://github.com/rspeer/wordfreq",
+      "license": "frequency data CC BY-SA 4.0"
+    }
+  ],
+  "words": 13430,
+  "examples": 25832,
+  "words_without_examples": 844,
+  "words_without_examples_or_phrases": 541,
+  "levels": [
+    {
+      "id": "junior",
+      "name": "初中",
+      "count": 1418,
+      "missing_examples": 11
+    },
+    {
+      "id": "senior",
+      "name": "高中",
+      "count": 3680,
+      "missing_examples": 69
+    },
+    {
+      "id": "cet4",
+      "name": "大学 CET4",
+      "count": 5287,
+      "missing_examples": 90
+    },
+    {
+      "id": "cet6",
+      "name": "大学 CET6",
+      "count": 7029,
+      "missing_examples": 116
+    },
+    {
+      "id": "tem8",
+      "name": "英语专八",
+      "count": 12818,
+      "missing_examples": 759
+    },
+    {
+      "id": "ielts1",
+      "name": "雅思 1 分 · 学习档",
+      "count": 500,
+      "missing_examples": 6
+    },
+    {
+      "id": "ielts2",
+      "name": "雅思 2 分 · 学习档",
+      "count": 1000,
+      "missing_examples": 10
+    },
+    {
+      "id": "ielts3",
+      "name": "雅思 3 分 · 学习档",
+      "count": 1800,
+      "missing_examples": 20
+    },
+    {
+      "id": "ielts4",
+      "name": "雅思 4 分 · 学习档",
+      "count": 3000,
+      "missing_examples": 28
+    },
+    {
+      "id": "ielts5",
+      "name": "雅思 5 分 · 学习档",
+      "count": 4500,
+      "missing_examples": 49
+    },
+    {
+      "id": "ielts6",
+      "name": "雅思 6 分 · 学习档",
+      "count": 6000,
+      "missing_examples": 93
+    },
+    {
+      "id": "ielts7",
+      "name": "雅思 7 分 · 学习档",
+      "count": 7559,
+      "missing_examples": 190
+    }
+  ],
+  "ielts_rule": {
+    "pool": 7559,
+    "limits": [
+      500,
+      1000,
+      1800,
+      3000,
+      4500,
+      6000,
+      7559
+    ],
+    "sort": "wordfreq 3.1.1 英语 Zipf 词频降序；同频次按单词排序",
+    "official": false
+  },
+  "scope": "完整导入所列词书记录；不承诺官方大纲、全部义项或逐义例句覆盖。"
+}

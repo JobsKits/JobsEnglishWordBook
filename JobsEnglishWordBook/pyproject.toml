@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "jobs-english-wordbook"
+version = "1.0.0"
+description = "Jobs 分级英语词典"
+requires-python = ">=3.11"
+dependencies = ["PySide6==6.11.2"]
+
+[project.optional-dependencies]
+build = ["pyinstaller==6.22.3"]
+test = ["pytest>=8,<10"]
+corpus = ["wordfreq==3.1.1"]
+
+[project.gui-scripts]
+jobs-english-wordbook = "jobs_english_wordbook.app:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+jobs_english_wordbook = ["assets/*"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
