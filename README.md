@@ -14,7 +14,7 @@ https://github.com/user-attachments/assets/59530bf2-a724-4f96-ac1c-8d65800b6fb3
 
 使用 [**Python**](https://www.python.org/) 与 [**PySide6**](https://doc.qt.io/qtforpython-6/) 编写的原生桌面单词学习软件，支持 macOS 和 Windows 本机打包。词库随程序携带；浏览、搜索与系统语音点读不需要联网。
 
-## 一、用途
+## 一、用途 <a href="#前言" style="font-size:17px; color:green;"><b>🔼</b></a> <a href="#🔚" style="font-size:17px; color:green;"><b>🔽</b></a>
 
 - 左侧选择初中、高中、大学 CET4、大学 CET6、英语专八、雅思 1～7 分学习档。
 - 按 A–Z 分区浏览。非字母开头词条归入 `#`，分区显示当前搜索条件下的真实数量。
@@ -23,7 +23,7 @@ https://github.com/user-attachments/assets/59530bf2-a724-4f96-ac1c-8d65800b6fb3
 - 支持中英文搜索、分页、英语声音选择、语速调节和停止朗读。新点读中断上一次朗读。
 - `Esc` 返回列表，`⌘F / Ctrl+F` 搜索。返回保留搜索、分区、页码及滚动位置。
 
-## 二、直接运行
+## 二、直接运行 <a href="#前言" style="font-size:17px; color:green;"><b>🔼</b></a> <a href="#🔚" style="font-size:17px; color:green;"><b>🔽</b></a>
 
 Mac 可直接双击外层 `./JobsEnglishWordBook.app` 快捷入口，或打开 `./JobsEnglishWordBook.dmg`。成功构建后的成品位于 `./dist/YYYY.MM.DD HH-mm-ss/JobsEnglishWordBook.app`，双击打开；同目录的 `JobsEnglishWordBook.dmg` 可打开后将 App 拖到 Applications。成品内含 Python 与界面依赖，不需要额外安装 Python 包。
 
@@ -42,7 +42,7 @@ Mac 可直接双击外层 `./JobsEnglishWordBook.app` 快捷入口，或打开 `
 
 发音依赖系统英语语音。Mac 可在系统辅助功能的语音设置中配置，Windows 可在系统语言与语音设置中安装英语声音。缺少英语声音时界面会明确提示。
 
-## 三、词库标准与覆盖范围
+## 三、词库标准与覆盖范围 <a href="#前言" style="font-size:17px; color:green;"><b>🔼</b></a> <a href="#🔚" style="font-size:17px; color:green;"><b>🔽</b></a>
 
 覆盖标准是下表列出的公开备考词书合集，不是已核验的官方最新教学大纲。高级学段累计包含低级学段基础词；相同拼写忽略大小写合并，保留各来源释义、例句和短语，义项按词性和分号拆分，逗号不强行拆分。
 
@@ -67,7 +67,7 @@ Mac 可直接双击外层 `./JobsEnglishWordBook.app` 快捷入口，或打开 `
 
 九本词书原始行数均经过完整性验证：`ChuZhongluan_2`、`GaoZhongluan_2`、`CET4_2`、`CET4_3`、`CET6_2`、`CET6_3`、`Level8_2`、`IELTS_2`、`IELTS_3`。各文件地址、SHA-256、原始记录数、分级覆盖数和缺例句数量保存于 `./JobsEnglishWordBook/src/jobs_english_wordbook/assets/coverage.json`，应用内也可点击“词库与分级说明”。
 
-## 四、工程与开发
+## 四、工程与开发 <a href="#前言" style="font-size:17px; color:green;"><b>🔼</b></a> <a href="#🔚" style="font-size:17px; color:green;"><b>🔽</b></a>
 
 ```text
 JobsEnglishWordBook.py/
@@ -113,7 +113,7 @@ Windows 对应解释器路径为 `.venv\Scripts\python.exe`。Windows EXE 必须
 
 重建词库需 `corpus` 开发依赖，运行成品不需要 wordfreq。SQLite 通过临时数据库构建、校验后替换，避免失败覆盖旧词库。可选的 `--ecdict 完整CSV路径` 用于接入 [ECDICT](https://github.com/skywind3000/ECDICT) 补充词义，但会改变词表、数量和分级；当前默认交付未使用 ECDICT，切换后需要同步覆盖报告和界面说明。
 
-## 五、日志与验证
+## 五、日志与验证 <a href="#前言" style="font-size:17px; color:green;"><b>🔼</b></a> <a href="#🔚" style="font-size:17px; color:green;"><b>🔽</b></a>
 
 - 启动和构建日志：系统临时目录中的 `JobsEnglishWordBook-run.log` / `JobsEnglishWordBook-build.log`。
 - GUI 异常日志：Qt 平台用户应用数据目录下的 `Jobs/JobsEnglishWordBook/logs/app.log`，异常弹窗会显示本机实际路径。
@@ -121,13 +121,13 @@ Windows 对应解释器路径为 `.venv\Scripts\python.exe`。Windows EXE 必须
 - macOS `.command` 已做 `zsh -n`，Python 已做编译及测试；Windows `.bat` 已静态审查，Windows 打包与发音尚未在真机执行。
 - 原始语料可能包含词义重复、同形异义词合并及词书本身的错误；覆盖率报告不等于教学内容人工审校。
 
-## 六、数据与分发边界
+## 六、数据与分发边界 <a href="#前言" style="font-size:17px; color:green;"><b>🔼</b></a> <a href="#🔚" style="font-size:17px; color:green;"><b>🔽</b></a>
 
 词书取自 [kajweb/dict](https://github.com/kajweb/dict)，原始来源标注为有道及新东方相关词书，仓库未提供清晰的再分发许可。当前作为本地个人学习资料使用，公开发行或商用前应换成具有明确授权的数据。词频来自 [wordfreq](https://github.com/rspeer/wordfreq)，数据为 CC BY-SA 4.0，代码为 Apache 2.0。程序保留来源与修改说明；第三方材料不作为 Jobs 自有内容。
 
 PySide6 / Qt 使用其相应开源许可，分发前应保留其许可文件并满足相关条件。当前 Mac App 未作 Developer ID 签名、公证；未制作 Windows 签名安装器。脚本不会绕过 Gatekeeper、关闭安全机制或修改系统权限。
 
-## 七、常见问题
+## 七、常见问题 <a href="#前言" style="font-size:17px; color:green;"><b>🔼</b></a> <a href="#🔚" style="font-size:17px; color:green;"><b>🔽</b></a>
 
 **为什么不是每个级别都对应一个固定的官方词数？**
 
@@ -152,3 +152,5 @@ PySide6 / Qt 使用其相应开源许可，分发前应保留其许可文件并�
 第一层交付目录与平台打包脚本同层保存 `dist/`，以及最新 APP / DMG 的相对符号链接（Mac）或 EXE / 分发包的 `.lnk`（Windows）。双击快捷方式即可接触成品，真实文件保留在 `dist/`；成功构建自动更新入口，清理旧产物时移除对应旧入口。尚无成品时不生成无效快捷方式。
 
 构建产物使用本机本地构建时间，格式为 `YYYY.MM.DD HH-mm-ss`（年月日时分秒），例如 `2020.06.04 12-23-21`。每次构建的 APP、DMG、EXE、ZIP 和配套文件统一保存到交付层 `./dist/YYYY.MM.DD HH-mm-ss/`，同次构建只取一次时间；第一层快捷方式指向本次时间目录，成功后打开该目录并启动其中的软件。旧产物沿用原有清理规则；历史产物缺少可靠构建时间时，不补写推测时间。
+
+<a id="🔚" href="#前言" style="font-size:17px; color:green; font-weight:bold;">我是有底线的➤点我回到首页</a>
